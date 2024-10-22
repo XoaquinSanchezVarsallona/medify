@@ -2,11 +2,11 @@ import React from 'react';
 import './index.css';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import WeekDay from './components/medication/WeekDays.tsx';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <WeekDay variant='active' title='We'/>
+  <h1 className="text-3xl font-bold underline">
+  Hello world!
+</h1>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,18 +1,19 @@
-import '../index.css';
 import React, { ButtonHTMLAttributes } from 'react';
+import "../../../index.css"
+
 
 const ButtonDayVariants =  {
   active: 
-    "size-5 bg-primary:500 place-items-center " +
+    ["size-5 bg-green:500" +
     "flex items-center justify-center " +
-    "text-base text-black:500 " +
-    "rounded-full"
+    "text_style text_base text-black:500 " +
+    "rounded-full"]
   ,
   disable: 
-    "size-5 bg-primary:400 place-items-center "  +
+    ["size-5 bg-yellow:600 "  +
     "flex items-center justify-center "+
-    "text-base text-white " +
-    "rounded-full"
+    "text_style text_base text-black:400 " +
+    "rounded-full"]
   ,
 }
 
@@ -28,7 +29,7 @@ const WeekDay = ({variant, title, ...props} : WeekDayProps) => {
   const variantClasses = ButtonDayVariants[variant];
   console.log(variantClasses);
   return (
-    <button className={variantClasses} {...props}>
+    <button className={variantClasses.join(' ')} {...props}>
         {title}
     </button>
   );
