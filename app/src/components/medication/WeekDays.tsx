@@ -1,3 +1,4 @@
+import '../index.css';
 import React, { ButtonHTMLAttributes } from 'react';
 
 const ButtonDayVariants =  {
